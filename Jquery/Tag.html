@@ -1,0 +1,18 @@
+    <!-- Requirement :
+        Display the text into the yello color using selector.  -->
+    <html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body></br>
+        <span> Welcome To Jquery .. Tag Selector!!!!</span></br>
+        <span id = "spanId"> Welcome To Jquery .. Id Selector !!!!</span></br>
+        <span class = "spanClass"> Welcome To Jquery .. Class Selector !!!!</span>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("span").css("background-color","yellow"); // Tag
+            $("#spanId").css("background-color","pink"); // Id
+            $(".spanClass").css("background-color","green"); // Class
+        });
+    </script>

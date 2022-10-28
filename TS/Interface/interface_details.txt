@@ -1,0 +1,10 @@
+/* Interface :
+    -- We know only declaration but don't know implementation then we choice
+       Interface.
+    -- We defined the interface using they 'interface' keyword.
+    -- In typescript we can implement the interface using 
+       below two ways :
+          --- Classes.
+          --- Json.
+*/
+

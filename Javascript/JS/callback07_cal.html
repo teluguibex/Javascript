@@ -1,0 +1,32 @@
+<script>
+/* callback :
+ */
+    //Calculation of the number :  Add,Sub,Multi,Div
+    function add(num, add) {
+        add(num + 10)
+    }
+    function sub(num, sub) {
+        sub(num - 5);
+    }
+    function multi(num, multi) {
+        multi(num * 5);
+    }
+    function div(num,division){
+            division(num / 10);
+    }
+    add(10, (addResult) => {
+        console.log("Add :", addResult);
+        sub(addResult,
+            (subResult) => {
+                console.log("Sub :", subResult);
+                multi(subResult, 
+                (multiResult) => {
+                    console.log("Multi :", multiResult);
+                    div(multiResult,(divResult) =>{
+                          console.log("Div Result : ",divResult);  
+                    })
+                });
+            })
+    });
+
+</script>

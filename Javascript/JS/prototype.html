@@ -1,0 +1,23 @@
+<html>
+<h1>Welcome !!!</h1>
+<head>
+     <script type="text/javascript">
+          /* Prototype :
+              Prototype is the global object which is associated with every functions,
+              objects,arrays,by default.
+          */
+          console.log(Object.__proto__);
+          let car = {
+               name: "ABC"
+          };
+          car.color = "White";
+          
+          let fun2 = {
+               "price": "XYZ"
+          };
+          fun2.__proto__ = car;
+          console.log(fun2);
+     </script>
+</head>
+
+</html>

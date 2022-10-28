@@ -1,0 +1,20 @@
+/* callback() :
+                Passing the function defination to another function as a
+                parameter/arguments it is called as callback().
+*/
+<script>
+
+  function funOne(param1){
+      console.log("parameter ",param1);
+      // console.log("Hi.. My name is funOne()");
+    // param1();
+  }
+  funOne(
+          ()=>{
+          console.log("Hi.. My name is funTwo()");
+      }
+  )
+</script>
+
+
+

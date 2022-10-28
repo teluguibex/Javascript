@@ -1,0 +1,38 @@
+<script>
+
+function *one_fun(){
+    yield "Hello_1";
+    yield "Hello_2";
+    yield "Hello_3";
+    yield "Hello_4";
+    yield "Hello_5";
+}
+let cursor = one_fun();
+console.log(cursor.next());
+console.log(cursor.next());
+console.log(cursor.next());
+console.log(cursor.next());
+console.log(cursor.next());
+console.log(cursor.next());
+console.log("*************************************************************************");
+
+function *books(){
+    yield *marathi();
+    yield *hindi();
+}
+
+function *marathi(){
+    yield "Marathi !!!!!!";
+}
+
+function *hindi(){
+    yield "Hindi !!!!!!";
+}
+
+let cursor1 = books();
+for(let i = 0 ;i < 2 ; i++){
+    console.log(cursor1.next());
+}
+
+
+</script>

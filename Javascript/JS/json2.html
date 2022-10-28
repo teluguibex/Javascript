@@ -1,0 +1,29 @@
+<script>
+  let json = [
+                {"p_id" : 111,"p_name" : "ReactJs" , "p_cost" : 1000},
+                {"p_id" : 222,"p_name" : "MongoDb" , "p_cost" : 2000},
+                {"p_id" : 333,"p_name" : "AngularJs" , "p_cost" : 3000},
+                {"p_id" : 444,"p_name" : "NodeJs" , "p_cost" : 4000},
+                {"p_id" : 555,"p_name" : "SpringBoot&Microservices" , "p_cost" : 5000},
+            ]
+  document.write(
+    ` <table border = 2px align = center cell spacing = "10px" cellpadding= "10px" >
+        <tr>
+            <th>Sr no</th>
+            <th>Prod id</th>
+            <th>Prod name </th>
+            <th> Prod cost </th>
+        </tr>        
+        `);
+        json.forEach((element,index) =>{
+            console.log(element, index);
+          document.write(`
+            <tr>
+                <td> ${index + 1}</td>  
+                <td> ${element.p_id}</td>  
+                <td> ${element.p_name}</td>  
+                <td> ${element.p_cost}</td>  
+            </tr>  `)
+        });
+        document.write(`</table>`)
+</script>

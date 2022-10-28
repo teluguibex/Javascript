@@ -1,0 +1,44 @@
+<script>
+    /*let fun_one = () =>{
+      return "Welcome to arrow functions.... ";
+    }
+    console.log(fun_one());
+  */
+  //assiging undefined we can called as variable hoisting ....
+    // let fun_one = (param1, param2, param3) => {
+    //     console.log(param1, param2, param3);
+    // }
+    // fun_one();
+    // fun_one(undefined,undefined,undefined);
+    // fun_one(null,null,null);
+
+    // let fun_one = param1 => console.log(param1);
+    // fun_one();
+    // fun_one("param_1");
+    // fun_one(null);
+
+    // let network_call = (successCallBack,errorCallBack) =>{
+    //     console.log(successCallBack()),
+    //     console.log(errorCallBack())
+    // }
+    // network_call( ()=>{
+    //     return  "success"
+    // }, () =>{
+    //     return  "error"
+    // });
+
+    let fun_one = (param1,param2 = "Hello_2",...param3) =>{
+        console.log(param1,param2,param3);
+    }
+    fun_one();
+    fun_one("Hello_1");
+    fun_one("Hello1",undefined,"Hello_3")
+    fun_one("Hello1",undefined,"Hello_3","Hello_4")
+    fun_one(undefined,undefined,undefined)
+    fun_one(undefined,undefined,null)
+
+
+
+
+
+</script>

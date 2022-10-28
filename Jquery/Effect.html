@@ -1,0 +1,40 @@
+    <!-- Requirement :
+        Display the text into the yello color using selector.  -->
+        <html>
+            <head>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+            </head>
+            <body></br>
+                <div id  = "divId"></div> 
+                <span> Welcome To Jquery .. Tag Selector!!!!</span></br>
+                <button onclick = "toggle()">hide & show</button>
+                <button onclick = "show()">show</button>
+                <button onclick = "hide()">hide</button>
+                <div style="background:#98bf21;height:100px;width:100px;position:absolute;">Hello Sir....</div>  
+            </body>
+            <script>
+                $(document).ready(function(){
+                    $("span").bind("hover",() =>{
+                           $("span").css("background-color","red");     
+                    });
+                    $("span").bind("mouseleave",() =>{
+                           $("span").css("background-color","green");     
+                    });
+
+
+                    $("div").animate({top: '450px'});  
+
+                    $("span").prepend("<b>Hello</b>");
+
+                    toggle = () => {
+                        $("span").toggle();
+                    }   
+                    show = () => {
+                        $("span").fadeIn(1500);
+                    }   
+                    hide = () => {
+                        $("span").fadeOut(2500);
+                    }   
+    });
+            </script>
+        

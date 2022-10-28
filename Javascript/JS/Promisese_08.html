@@ -1,0 +1,61 @@
+<script>
+/* 
+Promise : 
+    Executing tasks sequencially is called as promises.
+    Promises are divided into two sections :
+        Promise Creation  :
+        Promise Consumption :
+        **** Real Time Example :
+        * Ride on Bike  :
+                1>  Start The Bike ..
+                2>  After Start we should race .
+    
+     Promise is predefined class to create the promise.
+    
+     We can consume promises in two ways :
+            then() : (old approach)
+            asyn & await : (new approach)
+    Syntax :
+                let pro1 = new Promise((resolved,reject) =>{});  //Creation
+                /consumption ..
+                pro1.then((s)=>{
+    
+                },(f) =>{
+    
+                });
+    */
+    let task1 = new Promise((resolved, reject) => {
+        setTimeout(() => {
+            resolved("Task _01");
+        }, 10000);
+    });
+    task1.then((result) => {
+        console.log("result ", result);
+    }, (error) => {
+        console.log("error ", error);
+    });
+    let task2 = new Promise((resolved, reject) => {
+        setTimeout(() => {
+            resolved("Task _02");
+        }, 20000);
+    });
+
+    task2.then((result) => {
+        console.log("result ", result);
+    }, (error) => {
+        console.log("error ", error);
+    });
+    let task3 = new Promise((resolved, reject) => {
+        setTimeout(() => {
+            resolved("Task _03");
+        }, 30000);
+    });
+    task3.then((result) => {
+        console.log("result ", result);
+    }, (error) => {
+        console.log("error ", error);
+    });
+</script>
+<html>
+    <h2>Promise Example ...</h2>
+</html>
